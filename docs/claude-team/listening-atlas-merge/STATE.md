@@ -23,7 +23,7 @@
 | 3 | plan | approved | 2026-10-10 22:03:58 | 2026-10-10 22:06:12 |
 | 4 | build | done | 2026-10-10 22:06:20 | 2026-10-10 22:15:50 |
 | 5 | verify | done | 2026-10-10 22:15:50 | 2026-10-10 22:27:54 |
-| 6 | finish | in_progress | 2026-10-10 22:28:16 |  |
+| 6 | finish | approved | 2026-10-10 22:28:16 | 2026-10-10 23:24:45 |
 
 ## Waves
 
@@ -133,4 +133,8 @@
 - 2026-10-10 22:28:16 giai đoạn 6 → in_progress
 - 2026-10-10 22:28:32 ruling: Sửa Minor 1, 4, 5 của 07-review; Minor 2 đã hết hiệu lực sau qa-fix-1; Minor 3 ghi vào PR/báo cáo; Minor 6 chốt bằng commit-docs
 - 2026-10-10 22:28:51 commit tài liệu: báo cáo cuối
+- 2026-10-10 22:28:51 giai đoạn 6 → awaiting_approval
+- 2026-10-10 23:24:45 giai đoạn 6 → approved
+- 2026-10-10 23:24:45 user chọn: merge vào main rồi push origin (đã được báo transcript ELLLO sẽ công khai trên repo public)
+- 2026-10-10 23:24:45 commit tài liệu: chốt lựa chọn finish
 

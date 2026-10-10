@@ -51,9 +51,9 @@
     {
       "n": 6,
       "name": "finish",
-      "status": "in_progress",
+      "status": "approved",
       "started_at": "2026-10-10 22:28:16",
-      "ended_at": ""
+      "ended_at": "2026-10-10 23:24:45"
     }
   ],
   "waves": [
@@ -553,6 +553,22 @@
     {
       "at": "2026-10-10 22:28:51",
       "msg": "commit tài liệu: báo cáo cuối"
+    },
+    {
+      "at": "2026-10-10 22:28:51",
+      "msg": "giai đoạn 6 → awaiting_approval"
+    },
+    {
+      "at": "2026-10-10 23:24:45",
+      "msg": "giai đoạn 6 → approved"
+    },
+    {
+      "at": "2026-10-10 23:24:45",
+      "msg": "user chọn: merge vào main rồi push origin (đã được báo transcript ELLLO sẽ công khai trên repo public)"
+    },
+    {
+      "at": "2026-10-10 23:24:45",
+      "msg": "commit tài liệu: chốt lựa chọn finish"
     }
   ]
 }
