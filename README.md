@@ -49,4 +49,4 @@ Test đảo ngược từng patch (`patched` phải xuất hiện đúng 1 lần
 
 ## Nguồn
 
-Nội dung và audio bài nghe lấy từ ELLLO (elllo.org), dùng cho mục đích học tập phi thương mại.
+Nội dung và audio bài nghe lấy từ ELLLO / Todd Beuckens (elllo.org), dùng cho mục đích học tập phi thương mại.

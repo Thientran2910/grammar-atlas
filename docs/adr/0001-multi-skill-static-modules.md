@@ -10,6 +10,6 @@
 - URL cũ dạng `/#/…` (Grammar Atlas trước đây ở gốc) được hub chuyển sang `grammar/#/…`.
 
 ## Hệ quả
-- Thêm kỹ năng = thêm thư mục + thêm một mục trong danh sách module của hub. Không phải sửa module khác.
+- Thêm kỹ năng = thêm thư mục + thêm một thẻ trong `index.html` của hub và một nhánh trong `progressText` (`assets/hub.js`). Không phải sửa module khác.
 - Có trùng lặp (`style.css` có ở nhiều module) — chấp nhận để giữ nguyên byte bản gốc và tránh sửa một nơi vỡ nơi khác.
 - Chuyển Grammar Atlas khỏi gốc làm đổi URL; script chuyển hướng ở hub giữ link cũ chạy được.
