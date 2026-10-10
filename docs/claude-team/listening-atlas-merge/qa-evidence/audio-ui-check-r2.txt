@@ -1,0 +1,10 @@
+== b1/experiences
+"{\"src\":\"https://listening-atlas-thien.thientran2910.chatgpt.site/audio/experiences.mp3\",\"rs\":1,\"dur\":322.323878,\"err\":null}"
+== b1/morning
+"{\"src\":\"https://listening-atlas-thien.thientran2910.chatgpt.site/audio/morning.mp3\",\"rs\":1,\"dur\":164.207846,\"err\":null}"
+== b1plus/mars
+"{\"src\":\"https://listening-atlas-thien.thientran2910.chatgpt.site/audio/mars.mp3\",\"rs\":1,\"dur\":248.028594,\"err\":null}"
+== b2plus/black-friday
+"{\"src\":\"https://listening-atlas-thien.thientran2910.chatgpt.site/audio/black-friday.mp3\",\"rs\":1,\"dur\":265.373708,\"err\":null}"
+== b2/email
+"{\"src\":\"https://listening-atlas-thien.thientran2910.chatgpt.site/audio/email.mp3\",\"rs\":1,\"dur\":143.852449,\"err\":null}"

@@ -1,0 +1,76 @@
+{
+  "id": "f8aa9915-9262-4cf0-95a1-e15c4c47cb0e",
+  "ok": true,
+  "result": {
+    "worktree": {
+      "id": "7d54bc24-52c8-412e-b521-9ed7ecafe9fc::/Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w2-t3",
+      "identity": {
+        "key": "wt2:local:3eda14de-4bad-437f-885d-b09e0534dc3c",
+        "executionHostId": "local",
+        "instanceId": "3eda14de-4bad-437f-885d-b09e0534dc3c"
+      },
+      "instanceId": "3eda14de-4bad-437f-885d-b09e0534dc3c",
+      "repoId": "7d54bc24-52c8-412e-b521-9ed7ecafe9fc",
+      "projectId": "github:thientran2910/grammar-atlas",
+      "hostId": "local",
+      "projectHostSetupId": "7d54bc24-52c8-412e-b521-9ed7ecafe9fc",
+      "creatorProvenance": {
+        "kind": "host"
+      },
+      "path": "/Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w2-t3",
+      "head": "ab7cebfc0947f3b3564e96412534a987954e347e",
+      "branch": "refs/heads/Thientran2910/listening-atlas-merge-w2-t3",
+      "isBare": false,
+      "isMainWorktree": false,
+      "displayName": "listening-atlas-merge-w2-t3",
+      "displayNameMode": "fixed",
+      "comment": "",
+      "linkedIssue": null,
+      "linkedPR": null,
+      "linkedLinearIssue": null,
+      "linkedLinearIssueWorkspaceId": null,
+      "linkedLinearIssueOrganizationUrlKey": null,
+      "linkedGitLabMR": null,
+      "linkedGitLabIssue": null,
+      "linkedBitbucketPR": null,
+      "linkedAzureDevOpsPR": null,
+      "linkedGiteaPR": null,
+      "linkedWorkItem": null,
+      "linkedTaskSourceContext": null,
+      "isArchived": false,
+      "isUnread": false,
+      "isPinned": false,
+      "sortOrder": 1791645142125,
+      "lastActivityAt": 1791645142124,
+      "createdAt": 1791645142124,
+      "cliProvenance": {
+        "kind": "created-by-cli",
+        "createdAt": 1791645141199,
+        "callerTerminalHandle": "term_c7a98f11-9485-4384-bbe8-9ca6e56f263a"
+      },
+      "baseRef": "team/listening-atlas-merge",
+      "workspaceStatus": "in-progress",
+      "parentWorktreeId": null,
+      "childWorktreeIds": [],
+      "lineage": null,
+      "workspaceLineage": null,
+      "git": {
+        "path": "/Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w2-t3",
+        "head": "ab7cebfc0947f3b3564e96412534a987954e347e",
+        "branch": "refs/heads/Thientran2910/listening-atlas-merge-w2-t3",
+        "isBare": false,
+        "isMainWorktree": false
+      }
+    },
+    "lineage": null,
+    "workspaceLineage": null,
+    "warnings": [],
+    "catalogVersion": {
+      "epoch": "39b45c07-83d3-44c8-9542-ba2d95ed8263",
+      "sequence": 122
+    }
+  },
+  "_meta": {
+    "runtimeId": "398f983e-4e29-49f1-804f-deb048cce3b6"
+  }
+}

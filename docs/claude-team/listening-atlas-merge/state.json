@@ -1,0 +1,574 @@
+{
+  "slug": "listening-atlas-merge",
+  "feature": "Clone Listening Atlas (style + chức năng) gộp vào grammar-atlas thành site luyện tiếng Anh đa kỹ năng",
+  "repo": "/Users/thientv/Workspace/grammar-atlas",
+  "base": "main",
+  "integration": "team/listening-atlas-merge",
+  "external": [],
+  "track": "M",
+  "backend": "orca",
+  "run_id": "run_13ae0628db1d",
+  "orca_ack": "delivery_a05137275ab9",
+  "current_phase": 6,
+  "inputs": [],
+  "created_at": "2026-10-10 22:00:02",
+  "phases": [
+    {
+      "n": 1,
+      "name": "grill",
+      "status": "approved",
+      "started_at": "2026-10-10 22:00:02",
+      "ended_at": "2026-10-10 22:03:57"
+    },
+    {
+      "n": 2,
+      "name": "design",
+      "status": "skipped",
+      "started_at": "2026-10-10 22:03:58",
+      "ended_at": "2026-10-10 22:03:58"
+    },
+    {
+      "n": 3,
+      "name": "plan",
+      "status": "approved",
+      "started_at": "2026-10-10 22:03:58",
+      "ended_at": "2026-10-10 22:06:12"
+    },
+    {
+      "n": 4,
+      "name": "build",
+      "status": "done",
+      "started_at": "2026-10-10 22:06:20",
+      "ended_at": "2026-10-10 22:15:50"
+    },
+    {
+      "n": 5,
+      "name": "verify",
+      "status": "done",
+      "started_at": "2026-10-10 22:15:50",
+      "ended_at": "2026-10-10 22:27:54"
+    },
+    {
+      "n": 6,
+      "name": "finish",
+      "status": "approved",
+      "started_at": "2026-10-10 22:28:16",
+      "ended_at": "2026-10-10 23:24:45"
+    }
+  ],
+  "waves": [
+    {
+      "n": 1,
+      "test_cmd": "node --test tests/grammar.test.mjs tests/listening.test.mjs",
+      "status": "merged"
+    },
+    {
+      "n": 2,
+      "test_cmd": "node --test tests/grammar.test.mjs tests/listening.test.mjs tests/hub.test.mjs",
+      "status": "merged"
+    },
+    {
+      "n": 3,
+      "test_cmd": "node --test tests/grammar.test.mjs tests/listening.test.mjs tests/hub.test.mjs",
+      "status": "merged"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "wave": 1,
+      "repo": "main",
+      "files": [
+        "grammar/index.html",
+        "grammar/style.css",
+        "grammar/tests.css",
+        "grammar/content.js",
+        "grammar/quiz-bank.js",
+        "grammar/topic-tests.js",
+        "grammar/app.js",
+        "tests/grammar.test.mjs",
+        "tests/fixtures/grammar.json",
+        "tests/clone.test.mjs",
+        "tests/fixtures/checksums.json",
+        "index.html",
+        "style.css",
+        "tests.css",
+        "content.js",
+        "quiz-bank.js",
+        "topic-tests.js",
+        "app.js"
+      ],
+      "test_cmd": "node --test tests/grammar.test.mjs",
+      "worktree": "/Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w1-t1",
+      "branch": "Thientran2910/listening-atlas-merge-w1-t1",
+      "base_sha": "64a7bc01079baca20d2e0bc760787bb8cbef60a5",
+      "scope_sha": "ee2b5c427b5dfe6506e7064e2f3c7fb679db7ebc",
+      "dispatch_id": "ctx_fa38c22b310e",
+      "status": "merged",
+      "started_at": "2026-10-10 22:07:44",
+      "fix_rounds": 0
+    },
+    {
+      "id": "t2",
+      "wave": 1,
+      "repo": "main",
+      "files": [
+        "listening/index.html",
+        "listening/style.css",
+        "listening/listening.css",
+        "listening/audio-data.js",
+        "listening/content.js",
+        "listening/app.js",
+        "tests/listening.test.mjs",
+        "tests/fixtures/listening.json"
+      ],
+      "test_cmd": "node --test tests/listening.test.mjs",
+      "worktree": "/Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w1-t2",
+      "branch": "Thientran2910/listening-atlas-merge-w1-t2",
+      "base_sha": "64a7bc01079baca20d2e0bc760787bb8cbef60a5",
+      "scope_sha": "b6450bf29762ba63ea388746f8ba17256d6a3442",
+      "dispatch_id": "ctx_c34656610195",
+      "status": "merged",
+      "started_at": "2026-10-10 22:10:54",
+      "fix_rounds": 1
+    },
+    {
+      "id": "t3",
+      "wave": 2,
+      "repo": "main",
+      "files": [
+        "index.html",
+        "assets/style.css",
+        "assets/hub.css",
+        "assets/hub.js",
+        "tests/hub.test.mjs"
+      ],
+      "test_cmd": "node --test tests/hub.test.mjs",
+      "worktree": "/Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w2-t3",
+      "branch": "Thientran2910/listening-atlas-merge-w2-t3",
+      "base_sha": "ab7cebfc0947f3b3564e96412534a987954e347e",
+      "scope_sha": "e598b726cf7d0ac14aa60b9a15e5e47902147928",
+      "dispatch_id": "ctx_397286813941",
+      "status": "merged",
+      "started_at": "2026-10-10 22:12:22",
+      "fix_rounds": 0
+    },
+    {
+      "id": "t4",
+      "wave": 2,
+      "repo": "main",
+      "files": [
+        "README.md"
+      ],
+      "test_cmd": "node --test tests/hub.test.mjs",
+      "worktree": "/Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w2-t4",
+      "branch": "Thientran2910/listening-atlas-merge-w2-t4",
+      "base_sha": "ab7cebfc0947f3b3564e96412534a987954e347e",
+      "scope_sha": "52251ae283da47a158db884fc8b79e279076a4ae",
+      "dispatch_id": "ctx_0d83434d12c0",
+      "status": "merged",
+      "started_at": "2026-10-10 22:12:28",
+      "fix_rounds": 0
+    },
+    {
+      "id": "qa-fix-1",
+      "wave": 3,
+      "repo": "main",
+      "files": [
+        "listening/app.js",
+        "tests/listening.test.mjs",
+        "tests/fixtures/listening.json",
+        "README.md"
+      ],
+      "test_cmd": "node --test tests/listening.test.mjs",
+      "worktree": "/Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w3-qa-fix-1",
+      "branch": "Thientran2910/listening-atlas-merge-w3-qa-fix-1",
+      "base_sha": "2d3fd9e40f0ba161664a02bd803b4536ed6930f2",
+      "scope_sha": "b7c6b69e82e9ac12bedb3098052c52f469880afc",
+      "dispatch_id": "ctx_9766ed2fd512",
+      "status": "merged",
+      "started_at": "2026-10-10 22:24:37",
+      "fix_rounds": 0
+    }
+  ],
+  "rulings": [
+    {
+      "at": "2026-10-10 22:03:57",
+      "phase": 1,
+      "decision": "Tự duyệt gate 1 theo đề xuất",
+      "reason": "User: 'Lên ý tưởng / Làm từ đầu đến cuối / Không hỏi lại / Xong thì đẩy lên repo báo tôi duyệt review'"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "phase": 2,
+      "decision": "Bỏ team-ba/team-ui/team-architect",
+      "reason": "Track M, không đổi schema/API, không Figma; 01-grill.md đã có AC đủ, ADR 0001 đã ghi ranh giới module"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "phase": 3,
+      "decision": "Tự duyệt gate 2 (plan track M, backend orca, 2 đợt)",
+      "reason": "User uỷ quyền toàn bộ: 'Làm từ đầu đến cuối / Không hỏi lại'"
+    },
+    {
+      "at": "2026-10-10 22:07:27",
+      "phase": 4,
+      "decision": "Không commit 16 mp3 ELLLO; app.js phát từ audioSource (elllo.org)",
+      "reason": "Bản thu thuộc bên thứ ba, không phát tán lại trong repo public; ELLLO host đúng file đó (cùng size, range); repo nhẹ đi 65MB"
+    },
+    {
+      "at": "2026-10-10 22:07:28",
+      "phase": 4,
+      "decision": "Commit ADR/GLOSSARY trên team/listening-atlas-merge ngay sau build-init",
+      "reason": "build-init chỉ nhận thư mục feature; tài liệu thuộc tính năng nên vào cùng branch PR"
+    },
+    {
+      "at": "2026-10-10 22:10:48",
+      "phase": 4,
+      "decision": "Đổi danh sách file t2 từ 'listening/' sang 6 file cụ thể",
+      "reason": "check-scope chỉ so khớp đường dẫn chính xác; 6 file đúng như plan Task 2"
+    },
+    {
+      "at": "2026-10-10 22:10:48",
+      "phase": 4,
+      "decision": "Bài black-friday: audioSource là .zip → app.js lấy audio từ https://listening-atlas-thien.thientran2910.chatgpt.site/<u.audio> khi audioSource không phải .mp3",
+      "reason": "ELLLO không host mp3 trực tiếp cho bài này (đã thử /Audio/A1451, S3 → 404/403); site gốc của user đang host đúng file; vẫn không commit mp3"
+    },
+    {
+      "at": "2026-10-10 22:15:17",
+      "phase": 4,
+      "decision": "Chấp nhận Minor t3 (aria-disabled, legacyTarget chỉ nhận #/); sửa opacity thẻ Sắp có ở Verify",
+      "reason": "Không ảnh hưởng chức năng; opacity làm giảm tương phản nên sửa luôn vì rẻ"
+    },
+    {
+      "at": "2026-10-10 22:24:35",
+      "phase": 5,
+      "decision": "Không dùng meta no-referrer; mọi bài phát audio từ https://listening-atlas-thien.thientran2910.chatgpt.site/<u.audio>",
+      "reason": "elllo.org cố ý chặn hotlink theo Referer (403) — không lách cơ chế của chủ nội dung; site gốc của user đang host đúng 16 file và cho phát khác origin (QA đo black-friday readyState 4); vẫn không commit mp3"
+    },
+    {
+      "at": "2026-10-10 22:28:32",
+      "phase": 6,
+      "decision": "Sửa Minor 1, 4, 5 của 07-review; Minor 2 đã hết hiệu lực sau qa-fix-1; Minor 3 ghi vào PR/báo cáo; Minor 6 chốt bằng commit-docs",
+      "reason": "Chỉ sửa tài liệu, rẻ, không đụng code"
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-10-10 22:00:02",
+      "msg": "khởi tạo"
+    },
+    {
+      "at": "2026-10-10 22:00:02",
+      "msg": "giai đoạn 1 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:03:57",
+      "msg": "ruling: Tự duyệt gate 1 theo đề xuất"
+    },
+    {
+      "at": "2026-10-10 22:03:57",
+      "msg": "giai đoạn 1 → awaiting_approval"
+    },
+    {
+      "at": "2026-10-10 22:03:57",
+      "msg": "giai đoạn 1 → approved"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "current_phase = 2"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "giai đoạn 2 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "ruling: Bỏ team-ba/team-ui/team-architect"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "giai đoạn 2 → skipped"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "current_phase = 3"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "giai đoạn 3 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "giai đoạn 3 → awaiting_approval"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "ruling: Tự duyệt gate 2 (plan track M, backend orca, 2 đợt)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "track = M"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "backend = orca"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "thêm task t1 (đợt 1)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "thêm task t2 (đợt 1)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "thêm task t3 (đợt 2)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "thêm task t4 (đợt 2)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "đợt 1 test tích hợp: node --test tests/grammar.test.mjs tests/listening.test.mjs"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "đợt 2 test tích hợp: node --test tests/grammar.test.mjs tests/listening.test.mjs tests/hub.test.mjs"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "giai đoạn 3 → approved"
+    },
+    {
+      "at": "2026-10-10 22:06:13",
+      "msg": "current_phase = 4"
+    },
+    {
+      "at": "2026-10-10 22:06:20",
+      "msg": "giai đoạn 4 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:07:27",
+      "msg": "ruling: Không commit 16 mp3 ELLLO; app.js phát từ audioSource (elllo.org)"
+    },
+    {
+      "at": "2026-10-10 22:07:27",
+      "msg": "branch tích hợp team/listening-atlas-merge"
+    },
+    {
+      "at": "2026-10-10 22:07:28",
+      "msg": "run_id = run_13ae0628db1d"
+    },
+    {
+      "at": "2026-10-10 22:07:28",
+      "msg": "build-init xong (backend orca)"
+    },
+    {
+      "at": "2026-10-10 22:07:28",
+      "msg": "ruling: Commit ADR/GLOSSARY trên team/listening-atlas-merge ngay sau build-init"
+    },
+    {
+      "at": "2026-10-10 22:07:44",
+      "msg": "dispatch t1 → /Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w1-t1"
+    },
+    {
+      "at": "2026-10-10 22:07:51",
+      "msg": "dispatch t2 → /Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w1-t2"
+    },
+    {
+      "at": "2026-10-10 22:08:26",
+      "msg": "task t1 status = review"
+    },
+    {
+      "at": "2026-10-10 22:08:29",
+      "msg": "orca worker_done task=t1 outcome=succeeded"
+    },
+    {
+      "at": "2026-10-10 22:09:10",
+      "msg": "task t2 status = review"
+    },
+    {
+      "at": "2026-10-10 22:09:13",
+      "msg": "orca worker_done task=t2 outcome=succeeded"
+    },
+    {
+      "at": "2026-10-10 22:09:28",
+      "msg": "task t1 status = done"
+    },
+    {
+      "at": "2026-10-10 22:10:48",
+      "msg": "ruling: Đổi danh sách file t2 từ 'listening/' sang 6 file cụ thể"
+    },
+    {
+      "at": "2026-10-10 22:10:48",
+      "msg": "ruling: Bài black-friday: audioSource là .zip → app.js lấy audio từ https://listening-atlas-thien.thientran2910.chatgpt.site/<u.audio> khi audioSource không phải .mp3"
+    },
+    {
+      "at": "2026-10-10 22:10:54",
+      "msg": "task t2 fix_rounds = 1"
+    },
+    {
+      "at": "2026-10-10 22:10:54",
+      "msg": "task t2 status = running"
+    },
+    {
+      "at": "2026-10-10 22:11:26",
+      "msg": "task t2 status = review"
+    },
+    {
+      "at": "2026-10-10 22:11:29",
+      "msg": "orca worker_done task=t2 outcome=succeeded"
+    },
+    {
+      "at": "2026-10-10 22:12:12",
+      "msg": "task t2 status = done"
+    },
+    {
+      "at": "2026-10-10 22:12:12",
+      "msg": "task t1 status = merged"
+    },
+    {
+      "at": "2026-10-10 22:12:12",
+      "msg": "task t2 status = merged"
+    },
+    {
+      "at": "2026-10-10 22:12:12",
+      "msg": "đợt 1 merged · test PASS"
+    },
+    {
+      "at": "2026-10-10 22:12:22",
+      "msg": "dispatch t3 → /Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w2-t3"
+    },
+    {
+      "at": "2026-10-10 22:12:28",
+      "msg": "dispatch t4 → /Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w2-t4"
+    },
+    {
+      "at": "2026-10-10 22:12:59",
+      "msg": "task t4 status = review"
+    },
+    {
+      "at": "2026-10-10 22:13:02",
+      "msg": "orca worker_done task=t4 outcome=succeeded"
+    },
+    {
+      "at": "2026-10-10 22:13:31",
+      "msg": "task t3 status = review"
+    },
+    {
+      "at": "2026-10-10 22:13:34",
+      "msg": "orca worker_done task=t3 outcome=succeeded"
+    },
+    {
+      "at": "2026-10-10 22:14:40",
+      "msg": "task t4 status = done"
+    },
+    {
+      "at": "2026-10-10 22:15:17",
+      "msg": "task t3 status = done"
+    },
+    {
+      "at": "2026-10-10 22:15:17",
+      "msg": "ruling: Chấp nhận Minor t3 (aria-disabled, legacyTarget chỉ nhận #/); sửa opacity thẻ Sắp có ở Verify"
+    },
+    {
+      "at": "2026-10-10 22:15:17",
+      "msg": "task t3 status = merged"
+    },
+    {
+      "at": "2026-10-10 22:15:17",
+      "msg": "task t4 status = merged"
+    },
+    {
+      "at": "2026-10-10 22:15:18",
+      "msg": "đợt 2 merged · test PASS"
+    },
+    {
+      "at": "2026-10-10 22:15:50",
+      "msg": "giai đoạn 4 → done"
+    },
+    {
+      "at": "2026-10-10 22:15:50",
+      "msg": "current_phase = 5"
+    },
+    {
+      "at": "2026-10-10 22:15:50",
+      "msg": "giai đoạn 5 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:24:35",
+      "msg": "ruling: Không dùng meta no-referrer; mọi bài phát audio từ https://listening-atlas-thien.thientran2910.chatgpt.site/<u.audio>"
+    },
+    {
+      "at": "2026-10-10 22:24:36",
+      "msg": "thêm task qa-fix-1 (đợt 3)"
+    },
+    {
+      "at": "2026-10-10 22:24:36",
+      "msg": "đợt 3 test tích hợp: node --test tests/grammar.test.mjs tests/listening.test.mjs tests/hub.test.mjs"
+    },
+    {
+      "at": "2026-10-10 22:24:37",
+      "msg": "dispatch qa-fix-1 → /Users/thientv/orca/workspaces/grammar-atlas/listening-atlas-merge-w3-qa-fix-1"
+    },
+    {
+      "at": "2026-10-10 22:25:20",
+      "msg": "task qa-fix-1 status = review"
+    },
+    {
+      "at": "2026-10-10 22:25:22",
+      "msg": "orca worker_done task=qa-fix-1 outcome=succeeded"
+    },
+    {
+      "at": "2026-10-10 22:26:27",
+      "msg": "task qa-fix-1 status = done"
+    },
+    {
+      "at": "2026-10-10 22:26:27",
+      "msg": "task qa-fix-1 status = merged"
+    },
+    {
+      "at": "2026-10-10 22:26:28",
+      "msg": "đợt 3 merged · test PASS"
+    },
+    {
+      "at": "2026-10-10 22:27:54",
+      "msg": "giai đoạn 5 → done"
+    },
+    {
+      "at": "2026-10-10 22:27:54",
+      "msg": "current_phase = 6"
+    },
+    {
+      "at": "2026-10-10 22:28:16",
+      "msg": "giai đoạn 6 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:28:32",
+      "msg": "ruling: Sửa Minor 1, 4, 5 của 07-review; Minor 2 đã hết hiệu lực sau qa-fix-1; Minor 3 ghi vào PR/báo cáo; Minor 6 chốt bằng commit-docs"
+    },
+    {
+      "at": "2026-10-10 22:28:51",
+      "msg": "commit tài liệu: báo cáo cuối"
+    },
+    {
+      "at": "2026-10-10 22:28:51",
+      "msg": "giai đoạn 6 → awaiting_approval"
+    },
+    {
+      "at": "2026-10-10 23:24:45",
+      "msg": "giai đoạn 6 → approved"
+    },
+    {
+      "at": "2026-10-10 23:24:45",
+      "msg": "user chọn: merge vào main rồi push origin (đã được báo transcript ELLLO sẽ công khai trên repo public)"
+    },
+    {
+      "at": "2026-10-10 23:24:45",
+      "msg": "commit tài liệu: chốt lựa chọn finish"
+    }
+  ]
+}
