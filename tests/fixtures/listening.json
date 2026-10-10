@@ -1,0 +1,28 @@
+{
+  "files": {
+    "index.html": "9040f9eb2c68cf37666dbe28a79b06ad603676f0ee3f2aefe47a324b26a407f0",
+    "style.css": "903630cd10523aae770e02a1bff09a17b94b1ee908ae50d17b849951ed46dedf",
+    "listening.css": "d4f0e51106648972bead7d6f6586ddcfa5b6eac5adb2ebc390ccdfc503efc133",
+    "audio-data.js": "5e9170f9fb2970eb84fe23dabd3a15a628fde8a743698ec9ad66e1d3bbd123df",
+    "content.js": "5e6caa8d1c0e5a5e3279aa8b77bcbb01e1a31d8b6e03fd8f4bf2b4e3bdad5965",
+    "app.js": "82188cafa8bdc08522e3ed9ce1999c98433590dab4367cb0b7816fdf7d5b2a33"
+  },
+  "patches": {
+    "index.html": [
+      {
+        "original": "<a href=\"https://grammar-atlas-thien.thientran2910.chatgpt.site\" target=\"_blank\" rel=\"noopener\">Grammar Atlas ↗</a></div></footer>",
+        "patched": "<a href=\"../grammar/\">Grammar Atlas ↗</a><a href=\"../\">English Atlas ↗</a></div></footer>"
+      }
+    ],
+    "app.js": [
+      {
+        "original": "href=\"https://grammar-atlas-thien.thientran2910.chatgpt.site#/",
+        "patched": "href=\"../grammar/#/"
+      },
+      {
+        "original": "src=\"${u.audio}\"",
+        "patched": "src=\"${u.audioSource}\""
+      }
+    ]
+  }
+}
