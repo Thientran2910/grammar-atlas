@@ -18,7 +18,7 @@ Bộ công cụ ôn tiếng Anh bằng tiếng Việt, gồm hai kỹ năng tron
 
 ## Âm thanh Listening
 
-Repo **không chứa file mp3**. Audio của Listening Atlas phát trực tiếp từ URL gốc trên ELLLO (`audioSource` trong dữ liệu bài), nên phần nghe **phụ thuộc vào elllo.org**: nếu ELLLO đổi URL hoặc ngừng phục vụ thì bài tương ứng không phát được. Riêng bài black-friday lấy audio từ site gốc listening-atlas-thien, vì ELLLO chỉ cung cấp file `.zip` cho bài này.
+Repo **không chứa file mp3**. Audio của Listening Atlas phát từ bản gốc `https://listening-atlas-thien.thientran2910.chatgpt.site/audio/` (site gốc phải còn chạy). ELLLO (elllo.org) chặn hotlink nên audio không phát trực tiếp từ ELLLO. Nếu muốn site độc lập hoàn toàn, có thể tự host 16 file mp3 (cân nhắc điều khoản phi thương mại của ELLLO).
 
 ## Thêm kỹ năng mới
 

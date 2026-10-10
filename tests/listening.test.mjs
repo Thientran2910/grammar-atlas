@@ -40,7 +40,7 @@ test('app.js và index.html không còn grammar-atlas-thien', () => {
 });
 
 test('app.js chứa đúng chuỗi patched của nguồn audio', () => {
-  const patched = "src=\"${/\\.mp3$/.test(u.audioSource)?u.audioSource:'https://listening-atlas-thien.thientran2910.chatgpt.site/'+u.audio}\"";
+  const patched = "src=\"${'https://listening-atlas-thien.thientran2910.chatgpt.site/'+u.audio}\"";
   assert.equal(readFileSync(join(mod, 'app.js'), 'utf8').split(patched).length - 1, 1);
 });
 
@@ -54,16 +54,18 @@ test('mọi tài nguyên nội bộ trong index.html đều tồn tại', () => 
   }
 });
 
-test('mọi bài nghe có audioSource .mp3 hoặc fallback audio/ hợp lệ', () => {
+test('mọi bài nghe có u.audio dạng audio/<slug>.mp3', () => {
   const src = readFileSync(join(mod, 'audio-data.js'), 'utf8');
   const audio = vm.runInNewContext(src + ';AUDIO');
   const items = Array.isArray(audio) ? audio : Object.values(audio);
   assert.ok(items.length > 0);
   for (const u of items) {
-    const direct = /^https:\/\/.+\.mp3$/.test(u.audioSource);
-    const fallback = !/\.mp3$/.test(u.audioSource) && /^audio\/[a-z0-9-]+\.mp3$/.test(u.audio);
-    assert.ok(direct || fallback, u.id);
+    assert.match(u.audio, /^audio\/[a-z0-9-]+\.mp3$/, u.id);
   }
+});
+
+test('index.html không thêm meta referrer', () => {
+  assert.doesNotMatch(readFileSync(join(mod, 'index.html'), 'utf8'), /name="referrer"/);
 });
 
 test('không commit file mp3 trong listening/', () => {
