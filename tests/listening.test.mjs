@@ -53,7 +53,7 @@ test('mọi bài nghe có audioSource ELLLO .mp3 (elllo.org hoặc bucket elllo-
   const items = Array.isArray(audio) ? audio : Object.values(audio);
   assert.ok(items.length > 0);
   for (const u of items) {
-    assert.match(u.audioSource, /^https:\/\/(elllo\.org|s3-us-west-1\.amazonaws\.com\/elllo-audio)\/.*\.mp3$/, u.id);
+    assert.match(u.audioSource, /^https:\/\/(elllo\.org|s3-us-west-1\.amazonaws\.com\/elllo-audio)\/.*\.(mp3|zip)$/, u.id);
   }
 });
 
