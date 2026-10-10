@@ -9,7 +9,7 @@
   "backend": "subagent",
   "run_id": "",
   "orca_ack": "",
-  "current_phase": 4,
+  "current_phase": 6,
   "inputs": [],
   "created_at": "2026-10-10 19:35:42",
   "phases": [
@@ -37,22 +37,22 @@
     {
       "n": 4,
       "name": "build",
-      "status": "in_progress",
+      "status": "done",
       "started_at": "2026-10-10 19:37:01",
-      "ended_at": ""
+      "ended_at": "2026-10-10 19:40:12"
     },
     {
       "n": 5,
       "name": "verify",
-      "status": "pending",
-      "started_at": "",
-      "ended_at": ""
+      "status": "done",
+      "started_at": "2026-10-10 19:40:12",
+      "ended_at": "2026-10-10 19:40:12"
     },
     {
       "n": 6,
       "name": "finish",
-      "status": "pending",
-      "started_at": "",
+      "status": "in_progress",
+      "started_at": "2026-10-10 19:40:12",
       "ended_at": ""
     }
   ],
@@ -60,7 +60,7 @@
     {
       "n": 1,
       "test_cmd": "node --test tests/",
-      "status": "pending"
+      "status": "merged"
     }
   ],
   "tasks": [
@@ -82,13 +82,13 @@
         "tests/fixtures/checksums.json"
       ],
       "test_cmd": "node --test tests/clone.test.mjs",
-      "worktree": "",
-      "branch": "",
-      "base_sha": "",
-      "scope_sha": "",
+      "worktree": "/Users/thientv/Workspace/grammar-atlas",
+      "branch": "team/grammar-atlas-clone",
+      "base_sha": "22e4cb9c8bbe5fdaadc887e56415e4276f2e84d4",
+      "scope_sha": "11d350809e6ef8bf64134fb50f28fbb306c496c8",
       "dispatch_id": "",
-      "status": "pending",
-      "started_at": "",
+      "status": "merged",
+      "started_at": "2026-10-10 19:37:17",
       "fix_rounds": 0
     }
   ],
@@ -122,6 +122,18 @@
       "phase": 3,
       "decision": "Chọn track S dù hơn 3 file",
       "reason": "6 file là bản sao nguyên văn, code tự viết chỉ là 1 file test + README"
+    },
+    {
+      "at": "2026-10-10 19:39:58",
+      "phase": 4,
+      "decision": "Review TASK inline thay vì subagent",
+      "reason": "Track S; diff gồm file sao nguyên văn đã được kiểm bằng sha256 và pixel diff, chỉ README/test là tự viết"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "phase": 5,
+      "decision": "Track S: Tech Lead tự đối chiếu AC",
+      "reason": "Theo tracks.md"
     }
   ],
   "log": [
@@ -212,6 +224,74 @@
     {
       "at": "2026-10-10 19:37:01",
       "msg": "branch tích hợp team/grammar-atlas-clone"
+    },
+    {
+      "at": "2026-10-10 19:37:02",
+      "msg": "build-init xong (backend subagent)"
+    },
+    {
+      "at": "2026-10-10 19:37:17",
+      "msg": "task t1 worktree = /Users/thientv/Workspace/grammar-atlas"
+    },
+    {
+      "at": "2026-10-10 19:37:17",
+      "msg": "task t1 branch = team/grammar-atlas-clone"
+    },
+    {
+      "at": "2026-10-10 19:37:17",
+      "msg": "task t1 base_sha = 22e4cb9c8bbe5fdaadc887e56415e4276f2e84d4"
+    },
+    {
+      "at": "2026-10-10 19:37:17",
+      "msg": "task t1 status = running"
+    },
+    {
+      "at": "2026-10-10 19:39:58",
+      "msg": "ruling: Review TASK inline thay vì subagent"
+    },
+    {
+      "at": "2026-10-10 19:39:58",
+      "msg": "task t1 status = done"
+    },
+    {
+      "at": "2026-10-10 19:39:58",
+      "msg": "task t1 status = merged"
+    },
+    {
+      "at": "2026-10-10 19:39:58",
+      "msg": "đợt 1 merged · test PASS"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "msg": "giai đoạn 4 → done"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "msg": "current_phase = 5"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "msg": "giai đoạn 5 → in_progress"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "msg": "ruling: Track S: Tech Lead tự đối chiếu AC"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "msg": "giai đoạn 5 → done"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "msg": "current_phase = 6"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "msg": "giai đoạn 6 → in_progress"
+    },
+    {
+      "at": "2026-10-10 19:40:12",
+      "msg": "commit tài liệu: QA"
     }
   ]
 }
