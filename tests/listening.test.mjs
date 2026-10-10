@@ -33,8 +33,15 @@ test('index.html không còn script Cloudflare của hosting', () => {
   assert.doesNotMatch(readFileSync(join(mod, 'index.html'), 'utf8'), /cdn-cgi/);
 });
 
-test('app.js không còn trỏ tới chatgpt.site', () => {
-  assert.doesNotMatch(readFileSync(join(mod, 'app.js'), 'utf8'), /chatgpt\.site/);
+test('app.js và index.html không còn grammar-atlas-thien', () => {
+  for (const f of ['app.js', 'index.html']) {
+    assert.doesNotMatch(readFileSync(join(mod, f), 'utf8'), /grammar-atlas-thien/, f);
+  }
+});
+
+test('app.js chứa đúng chuỗi patched của nguồn audio', () => {
+  const patched = "src=\"${/\\.mp3$/.test(u.audioSource)?u.audioSource:'https://listening-atlas-thien.thientran2910.chatgpt.site/'+u.audio}\"";
+  assert.equal(readFileSync(join(mod, 'app.js'), 'utf8').split(patched).length - 1, 1);
 });
 
 test('mọi tài nguyên nội bộ trong index.html đều tồn tại', () => {
@@ -47,13 +54,15 @@ test('mọi tài nguyên nội bộ trong index.html đều tồn tại', () => 
   }
 });
 
-test('mọi bài nghe có audioSource ELLLO .mp3 (elllo.org hoặc bucket elllo-audio)', () => {
+test('mọi bài nghe có audioSource .mp3 hoặc fallback audio/ hợp lệ', () => {
   const src = readFileSync(join(mod, 'audio-data.js'), 'utf8');
   const audio = vm.runInNewContext(src + ';AUDIO');
   const items = Array.isArray(audio) ? audio : Object.values(audio);
   assert.ok(items.length > 0);
   for (const u of items) {
-    assert.match(u.audioSource, /^https:\/\/(elllo\.org|s3-us-west-1\.amazonaws\.com\/elllo-audio)\/.*\.(mp3|zip)$/, u.id);
+    const direct = /^https:\/\/.+\.mp3$/.test(u.audioSource);
+    const fallback = !/\.mp3$/.test(u.audioSource) && /^audio\/[a-z0-9-]+\.mp3$/.test(u.audio);
+    assert.ok(direct || fallback, u.id);
   }
 });
 

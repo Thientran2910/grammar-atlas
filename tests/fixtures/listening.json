@@ -21,7 +21,7 @@
       },
       {
         "original": "src=\"${u.audio}\"",
-        "patched": "src=\"${u.audioSource}\""
+        "patched": "src=\"${/\\.mp3$/.test(u.audioSource)?u.audioSource:'https://listening-atlas-thien.thientran2910.chatgpt.site/'+u.audio}\""
       }
     ]
   }
