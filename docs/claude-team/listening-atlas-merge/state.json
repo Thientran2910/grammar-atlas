@@ -1,0 +1,296 @@
+{
+  "slug": "listening-atlas-merge",
+  "feature": "Clone Listening Atlas (style + chức năng) gộp vào grammar-atlas thành site luyện tiếng Anh đa kỹ năng",
+  "repo": "/Users/thientv/Workspace/grammar-atlas",
+  "base": "main",
+  "integration": "team/listening-atlas-merge",
+  "external": [],
+  "track": "M",
+  "backend": "orca",
+  "run_id": "",
+  "orca_ack": "",
+  "current_phase": 4,
+  "inputs": [],
+  "created_at": "2026-10-10 22:00:02",
+  "phases": [
+    {
+      "n": 1,
+      "name": "grill",
+      "status": "approved",
+      "started_at": "2026-10-10 22:00:02",
+      "ended_at": "2026-10-10 22:03:57"
+    },
+    {
+      "n": 2,
+      "name": "design",
+      "status": "skipped",
+      "started_at": "2026-10-10 22:03:58",
+      "ended_at": "2026-10-10 22:03:58"
+    },
+    {
+      "n": 3,
+      "name": "plan",
+      "status": "approved",
+      "started_at": "2026-10-10 22:03:58",
+      "ended_at": "2026-10-10 22:06:12"
+    },
+    {
+      "n": 4,
+      "name": "build",
+      "status": "in_progress",
+      "started_at": "2026-10-10 22:06:20",
+      "ended_at": ""
+    },
+    {
+      "n": 5,
+      "name": "verify",
+      "status": "pending",
+      "started_at": "",
+      "ended_at": ""
+    },
+    {
+      "n": 6,
+      "name": "finish",
+      "status": "pending",
+      "started_at": "",
+      "ended_at": ""
+    }
+  ],
+  "waves": [
+    {
+      "n": 1,
+      "test_cmd": "node --test tests/grammar.test.mjs tests/listening.test.mjs",
+      "status": "pending"
+    },
+    {
+      "n": 2,
+      "test_cmd": "node --test tests/grammar.test.mjs tests/listening.test.mjs tests/hub.test.mjs",
+      "status": "pending"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "wave": 1,
+      "repo": "main",
+      "files": [
+        "grammar/index.html",
+        "grammar/style.css",
+        "grammar/tests.css",
+        "grammar/content.js",
+        "grammar/quiz-bank.js",
+        "grammar/topic-tests.js",
+        "grammar/app.js",
+        "tests/grammar.test.mjs",
+        "tests/fixtures/grammar.json",
+        "tests/clone.test.mjs",
+        "tests/fixtures/checksums.json",
+        "index.html",
+        "style.css",
+        "tests.css",
+        "content.js",
+        "quiz-bank.js",
+        "topic-tests.js",
+        "app.js"
+      ],
+      "test_cmd": "node --test tests/grammar.test.mjs",
+      "worktree": "",
+      "branch": "",
+      "base_sha": "",
+      "scope_sha": "",
+      "dispatch_id": "",
+      "status": "pending",
+      "started_at": "",
+      "fix_rounds": 0
+    },
+    {
+      "id": "t2",
+      "wave": 1,
+      "repo": "main",
+      "files": [
+        "listening/",
+        "tests/listening.test.mjs",
+        "tests/fixtures/listening.json"
+      ],
+      "test_cmd": "node --test tests/listening.test.mjs",
+      "worktree": "",
+      "branch": "",
+      "base_sha": "",
+      "scope_sha": "",
+      "dispatch_id": "",
+      "status": "pending",
+      "started_at": "",
+      "fix_rounds": 0
+    },
+    {
+      "id": "t3",
+      "wave": 2,
+      "repo": "main",
+      "files": [
+        "index.html",
+        "assets/style.css",
+        "assets/hub.css",
+        "assets/hub.js",
+        "tests/hub.test.mjs"
+      ],
+      "test_cmd": "node --test tests/hub.test.mjs",
+      "worktree": "",
+      "branch": "",
+      "base_sha": "",
+      "scope_sha": "",
+      "dispatch_id": "",
+      "status": "pending",
+      "started_at": "",
+      "fix_rounds": 0
+    },
+    {
+      "id": "t4",
+      "wave": 2,
+      "repo": "main",
+      "files": [
+        "README.md"
+      ],
+      "test_cmd": "node --test tests/hub.test.mjs",
+      "worktree": "",
+      "branch": "",
+      "base_sha": "",
+      "scope_sha": "",
+      "dispatch_id": "",
+      "status": "pending",
+      "started_at": "",
+      "fix_rounds": 0
+    }
+  ],
+  "rulings": [
+    {
+      "at": "2026-10-10 22:03:57",
+      "phase": 1,
+      "decision": "Tự duyệt gate 1 theo đề xuất",
+      "reason": "User: 'Lên ý tưởng / Làm từ đầu đến cuối / Không hỏi lại / Xong thì đẩy lên repo báo tôi duyệt review'"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "phase": 2,
+      "decision": "Bỏ team-ba/team-ui/team-architect",
+      "reason": "Track M, không đổi schema/API, không Figma; 01-grill.md đã có AC đủ, ADR 0001 đã ghi ranh giới module"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "phase": 3,
+      "decision": "Tự duyệt gate 2 (plan track M, backend orca, 2 đợt)",
+      "reason": "User uỷ quyền toàn bộ: 'Làm từ đầu đến cuối / Không hỏi lại'"
+    },
+    {
+      "at": "2026-10-10 22:07:27",
+      "phase": 4,
+      "decision": "Không commit 16 mp3 ELLLO; app.js phát từ audioSource (elllo.org)",
+      "reason": "Bản thu thuộc bên thứ ba, không phát tán lại trong repo public; ELLLO host đúng file đó (cùng size, range); repo nhẹ đi 65MB"
+    }
+  ],
+  "log": [
+    {
+      "at": "2026-10-10 22:00:02",
+      "msg": "khởi tạo"
+    },
+    {
+      "at": "2026-10-10 22:00:02",
+      "msg": "giai đoạn 1 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:03:57",
+      "msg": "ruling: Tự duyệt gate 1 theo đề xuất"
+    },
+    {
+      "at": "2026-10-10 22:03:57",
+      "msg": "giai đoạn 1 → awaiting_approval"
+    },
+    {
+      "at": "2026-10-10 22:03:57",
+      "msg": "giai đoạn 1 → approved"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "current_phase = 2"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "giai đoạn 2 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "ruling: Bỏ team-ba/team-ui/team-architect"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "giai đoạn 2 → skipped"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "current_phase = 3"
+    },
+    {
+      "at": "2026-10-10 22:03:58",
+      "msg": "giai đoạn 3 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "giai đoạn 3 → awaiting_approval"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "ruling: Tự duyệt gate 2 (plan track M, backend orca, 2 đợt)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "track = M"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "backend = orca"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "thêm task t1 (đợt 1)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "thêm task t2 (đợt 1)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "thêm task t3 (đợt 2)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "thêm task t4 (đợt 2)"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "đợt 1 test tích hợp: node --test tests/grammar.test.mjs tests/listening.test.mjs"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "đợt 2 test tích hợp: node --test tests/grammar.test.mjs tests/listening.test.mjs tests/hub.test.mjs"
+    },
+    {
+      "at": "2026-10-10 22:06:12",
+      "msg": "giai đoạn 3 → approved"
+    },
+    {
+      "at": "2026-10-10 22:06:13",
+      "msg": "current_phase = 4"
+    },
+    {
+      "at": "2026-10-10 22:06:20",
+      "msg": "giai đoạn 4 → in_progress"
+    },
+    {
+      "at": "2026-10-10 22:07:27",
+      "msg": "ruling: Không commit 16 mp3 ELLLO; app.js phát từ audioSource (elllo.org)"
+    },
+    {
+      "at": "2026-10-10 22:07:27",
+      "msg": "branch tích hợp team/listening-atlas-merge"
+    }
+  ]
+}
