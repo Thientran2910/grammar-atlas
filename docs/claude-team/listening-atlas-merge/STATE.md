@@ -10,7 +10,7 @@
 - track: M
 - backend: orca
 - run_id: run_13ae0628db1d
-- current_phase: 6
+- current_phase: done
 - created_at: 2026-10-10 22:00:02
 - inputs: none
 
@@ -23,7 +23,7 @@
 | 3 | plan | approved | 2026-10-10 22:03:58 | 2026-10-10 22:06:12 |
 | 4 | build | done | 2026-10-10 22:06:20 | 2026-10-10 22:15:50 |
 | 5 | verify | done | 2026-10-10 22:15:50 | 2026-10-10 22:27:54 |
-| 6 | finish | approved | 2026-10-10 22:28:16 | 2026-10-10 23:24:45 |
+| 6 | finish | done | 2026-10-10 22:28:16 | 2026-10-10 23:26:09 |
 
 ## Waves
 
@@ -137,4 +137,7 @@
 - 2026-10-10 23:24:45 giai đoạn 6 → approved
 - 2026-10-10 23:24:45 user chọn: merge vào main rồi push origin (đã được báo transcript ELLLO sẽ công khai trên repo public)
 - 2026-10-10 23:24:45 commit tài liệu: chốt lựa chọn finish
+- 2026-10-10 23:26:09 giai đoạn 6 → done
+- 2026-10-10 23:26:09 current_phase = done
+- 2026-10-10 23:26:09 kết thúc: merge vào main, push origin, Pages build 52af9cf OK
 
