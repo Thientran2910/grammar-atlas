@@ -1,0 +1,38 @@
+✔ grammar/style.css khớp bản gốc (0.987708ms)
+✔ grammar/tests.css khớp bản gốc (0.324959ms)
+✔ grammar/content.js khớp bản gốc (0.3935ms)
+✔ grammar/quiz-bank.js khớp bản gốc (0.743625ms)
+✔ grammar/topic-tests.js khớp bản gốc (0.215875ms)
+✔ grammar/app.js khớp bản gốc (0.210334ms)
+✔ grammar/index.html khớp bản gốc (0.167334ms)
+✔ grammar/index.html không còn script Cloudflare của hosting (0.119625ms)
+✔ mọi tài nguyên nội bộ trong grammar/index.html đều tồn tại (0.214792ms)
+✔ có .nojekyll cho GitHub Pages (0.082ms)
+✔ legacyTarget chuyển hash cũ của Grammar Atlas (0.392167ms)
+✔ legacyTarget bỏ qua hash không phải route (0.064ms)
+✔ progressText grammar (0.148708ms)
+✔ progressText listening (0.060333ms)
+✔ progressText chịu lỗi (0.066917ms)
+✔ index.html: không cdn-cgi, link nội bộ tồn tại (0.240333ms)
+✔ index.html: thẻ "Sắp có" không phải link (0.093958ms)
+✔ assets/style.css giống byte grammar/style.css (0.149584ms)
+✔ listening/index.html khớp bản gốc (sau khi đảo patch) (0.9635ms)
+✔ listening/style.css khớp bản gốc (sau khi đảo patch) (0.761375ms)
+✔ listening/listening.css khớp bản gốc (sau khi đảo patch) (0.322875ms)
+✔ listening/audio-data.js khớp bản gốc (sau khi đảo patch) (0.348333ms)
+✔ listening/content.js khớp bản gốc (sau khi đảo patch) (0.276625ms)
+✔ listening/app.js khớp bản gốc (sau khi đảo patch) (0.496083ms)
+✔ index.html không còn script Cloudflare của hosting (0.133958ms)
+✔ app.js và index.html không còn grammar-atlas-thien (0.135833ms)
+✔ app.js chứa đúng chuỗi patched của nguồn audio (0.114375ms)
+✔ mọi tài nguyên nội bộ trong index.html đều tồn tại (0.229958ms)
+✔ mọi bài nghe có audioSource .mp3 hoặc fallback audio/ hợp lệ (1.061875ms)
+✔ không commit file mp3 trong listening/ (0.378541ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 135.7895

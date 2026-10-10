@@ -1,0 +1,5 @@
+b2plus unit1 (black-friday):
+"{\"title\":\"Bargains and pressure\",\"src\":\"https://listening-atlas-thien.thientran2910.chatgpt.site/audio/black-friday.mp3\",\"rs\":4,\"dur\":265.373708,\"err\":null}"
+b1plus unit1:
+"{\"title\":\"Staying at a friend’s house\",\"src\":\"https://s3-us-west-1.amazonaws.com/elllo-audio/views-1451-1500/1460-Katie-RentHouse.mp3\",\"rs\":4,\"dur\":181.050476,\"err\":null}"
+b1 unit1 (elllo.org, referer localhost): audio err=4 MEDIA_ELEMENT_ERROR Format error, readyState 0 (403 hotlink block)
