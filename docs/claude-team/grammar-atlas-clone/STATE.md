@@ -10,7 +10,7 @@
 - track: S
 - backend: subagent
 - run_id: 
-- current_phase: 6
+- current_phase: done
 - created_at: 2026-10-10 19:35:42
 - inputs: none
 
@@ -23,7 +23,7 @@
 | 3 | plan | approved | 2026-10-10 19:37:01 | 2026-10-10 19:37:01 |
 | 4 | build | done | 2026-10-10 19:37:01 | 2026-10-10 19:40:12 |
 | 5 | verify | done | 2026-10-10 19:40:12 | 2026-10-10 19:40:12 |
-| 6 | finish | in_progress | 2026-10-10 19:40:12 |  |
+| 6 | finish | done | 2026-10-10 19:40:12 | 2026-10-10 19:41:35 |
 
 ## Waves
 
@@ -46,6 +46,7 @@
 - 2026-10-10 19:37:01 [giai đoạn 3] Chọn track S dù hơn 3 file — 6 file là bản sao nguyên văn, code tự viết chỉ là 1 file test + README
 - 2026-10-10 19:39:58 [giai đoạn 4] Review TASK inline thay vì subagent — Track S; diff gồm file sao nguyên văn đã được kiểm bằng sha256 và pixel diff, chỉ README/test là tự viết
 - 2026-10-10 19:40:12 [giai đoạn 5] Track S: Tech Lead tự đối chiếu AC — Theo tracks.md
+- 2026-10-10 19:41:35 [giai đoạn 6] Merge team/grammar-atlas-clone vào main, tạo repo public Thientran2910/grammar-atlas, push, bật Pages (main /) — User yêu cầu rõ: 'Làm xong đẩy lên github + github pages luôn!'
 
 ## Log
 
@@ -88,4 +89,8 @@
 - 2026-10-10 19:40:12 current_phase = 6
 - 2026-10-10 19:40:12 giai đoạn 6 → in_progress
 - 2026-10-10 19:40:12 commit tài liệu: QA
+- 2026-10-10 19:41:35 ruling: Merge team/grammar-atlas-clone vào main, tạo repo public Thientran2910/grammar-atlas, push, bật Pages (main /)
+- 2026-10-10 19:41:35 giai đoạn 6 → done
+- 2026-10-10 19:41:35 current_phase = done
+- 2026-10-10 19:41:35 kết thúc: merge main + push GitHub + Pages
 
